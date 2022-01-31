@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #1B263B;
+    
+}
+
+.home h3, h1 {
+    color: #AAA9A9;
+}
+
+.text {
+    color: #6b6969;
+}
+
