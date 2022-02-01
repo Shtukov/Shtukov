@@ -1,21 +1,107 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
 }
 
 body {
-    background-color: #1B263B;
-    
+  background-color: #1b263b;
+  width: 100%;
+  display: block;
+  margin: auto;
+  min-height: 100vh;
 }
 
-.home h3, h1 {
-    color: #AAA9A9;
+.logo {
+  cursor: pointer;
 }
 
-.text {
-    color: #6b6969;
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
 }
 
+.link-group {
+  list-style: none;
+  display: flex;
+}
+
+.link a {
+  color: #2af5ff;
+  opacity: 0.5;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 0 20px;
+  line-height: 80px;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+.link a:hover,
+.link.active a {
+  opacity: 1;
+}
+
+.resume a {
+  background-color: orangered;
+  opacity: 0.5;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 0 20px;
+  line-height: 80px;
+  font-size: 16px;
+  color: #1b263b;
+}
+
+.resume a:hover,
+.resume.active a {
+  opacity: 1;
+}
+
+.home-section {
+  width: 100%;
+  height: 100vh;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.hero-heading {
+  color: orangered;
+  font-size: 120px;
+  font-weight: 300;
+}
+
+.home-img {
+  top: 0;
+  right: 0;
+  height: 70%;
+  width: 50%;
+  object-fit: cover;
+  opacity: 0.2;
+  border-radius: 20px;
+}
+
+.home-section {
+  position: fixed;
+}
+
+.home-section.active,
+.about-section.active,
+.experience-section.active,
+.contact-section.active {
+  position: relative;
+  opacity: 1;
+  z-index: 8;
+}
