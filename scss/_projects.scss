@@ -139,19 +139,13 @@
         width: 80%;
     }
     .projects-container-logos {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         width: 80%;
     }
 }
 
-@media only screen and (min-width: 1685px) {
-    .projects-container-websites {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-    .projects-container-logos {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
+
+
 
 
 
