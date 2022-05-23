@@ -1,0 +1,173 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'about';
+@import 'contact';
+@import 'projects';
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $primary-color;
+    color: $body-text-color;
+    font-family: $font-family-base;
+    line-height: 1.3;
+}
+
+h1{
+    color: $h1-color;
+}
+
+h2, h3 {
+    color: $h2-color;
+    font-weight: 500;
+}
+
+.nav ul li a {
+    color: $body-text-color;
+    text-decoration: none;
+    opacity: .5;
+    @include transition-ease;
+}
+
+.nav ul li a:hover {
+    opacity: 1;
+    font-weight: 700;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: $primary-color;
+}
+
+.logo{
+    z-index: 2;
+}
+
+.logo img {
+    top: 0;
+    left: 0;
+    width: 120px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: $h2-color;
+    width: 100%;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
+    background-color: $primary-color;
+    
+    span{
+        color: $body-text-color;
+        opacity: 0.5;
+        @include transition-ease;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    } 
+}
+
+.social-icons a {
+    padding: 0.4rem;
+    color: $body-text-color;
+    opacity: 0.5;
+    @include transition-ease;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.copyright  {
+    padding-top: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer {
+        flex-direction: row;
+    }
+    .social-icons {
+        position: fixed;
+        bottom: 60px;
+        margin-left: 0.5rem;
+    }
+    .social-icons a {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+    .copyright {
+        margin-left: 45%;
+        padding-top: 0;
+    }
+    @keyframes bump {
+        33% {
+          -moz-transform: scale(1.3);
+        }
+      
+        66% {
+          -moz-transform: scale(0.8);
+        }
+      
+        100% {
+          -moz-transform: scale(1.0);
+        }
+      }
+      
+      @keyframes bump {
+        33% {
+          -webkit-transform: scale(1.3);
+        }
+      
+        66% {
+          -webkit-transform: scale(0.8);
+        }
+      
+        100% {
+          -webkit-transform: scale(1.0);
+        }
+      }
+      
+      @keyframes bump {
+        33% {
+          transform: scale(1.3);
+        }
+      
+        66% {
+          transform: scale(0.8);
+        }
+      
+        100% {
+          transform: scale(1.0);
+        }
+      }
+      
+      .social-icons a:hover {
+        -webkit-animation: bump .25s ease-in-out;
+        -moz-animation: bump .25s ease-in-out;
+        animation: bump .25s ease-in-out;
+        color: #a7d937;
+        opacity: 1;
+      }
+}

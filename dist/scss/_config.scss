@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+// Colors
+$primary-color: #060609;
+$secondary-color: #1E1F23;
+$h1-color:  #1bbb67;
+$h2-color:  #7837b1;
+$body-text-color: #a7d937;
+
+// Font families
+$font-family-base: 'Roboto Mono', monospace;
+
+// Font weights
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700
+);
+
+// Resets
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+// Transition mixin
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
