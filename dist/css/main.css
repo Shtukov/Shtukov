@@ -404,6 +404,11 @@
           box-shadow: 0 0 10px 4px #a7d937;
 }
 
+.projects {
+  width: 100%;
+  height: 100%;
+}
+
 .projects-container-logos {
   display: -ms-grid;
   display: grid;
@@ -682,10 +687,6 @@ h2, h3 {
 
 .social-icons a:hover {
   opacity: 1;
-}
-
-.copyright {
-  padding-top: 1rem;
 }
 
 @media only screen and (min-width: 1024px) {
